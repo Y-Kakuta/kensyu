@@ -69,8 +69,10 @@ public class Prob5 {
 	 * prob5-1
 	 */
 	private void prob5_1(){
+		// 配列の宣言
 		int[] a = new int[7];
 
+		// 配列に代入
 		for (int i = 0; i < a.length; i++){
 			a[i] = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 			System.out.println("a[" + i + "]=" + a[i]);
@@ -81,7 +83,9 @@ public class Prob5 {
 	 * prob5-2
 	 */
 	private void prob5_2(){
+		// 配列の宣言
 		double[] d = {0.2, -5.1, 3.2, 1.8};
+
 		for (int i = 0; i < d.length; i++){
 			System.out.println("d[" + i + "]=" + d[i]);
 		}
@@ -91,15 +95,17 @@ public class Prob5 {
 	 * prob5-3
 	 */
 	private void prob5_3(){
+		// 配列の宣言
 		int[] data = new int[10];
 
+		// 配列に代入
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 			System.out.print(data[i] + " ");
 		}
 		System.out.println("");
 
-		// 奇数の出力
+		// 奇数の検索
 		System.out.print("奇数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] % 2 == 1) {
@@ -108,7 +114,7 @@ public class Prob5 {
 		}
 		System.out.println("");
 
-		// 偶数の出力
+		// 偶数の検索
 		System.out.print("偶数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] % 2 == 0) {
@@ -122,15 +128,17 @@ public class Prob5 {
 	 * prob5-4
 	 */
 	private void prob5_4(){
+		// 配列の宣言
 		int[] data = new int[10];
 
+		// 配列に代入
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 			System.out.print(data[i] + " ");
 		}
 		System.out.println("");
 
-		// 50以上の出力
+		// 50以上の数の検索
 		System.out.print("50以上の数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] >= 50) {
@@ -139,7 +147,7 @@ public class Prob5 {
 		}
 		System.out.println("");
 
-		// 50未満の出力
+		// 50未満の数の検索
 		System.out.print("50未満の数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] < 50) {
@@ -153,15 +161,17 @@ public class Prob5 {
 	 * prob5-5
 	 */
 	private void prob5_5(){
+		// 配列の宣言
 		int[] data = new int[10];
 
+		// 配列に代入
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 			System.out.print(data[i] + " ");
 		}
 		System.out.println("");
 
-		// 3の倍数の出力
+		// 3の倍数の検索
 		System.out.print("3の倍数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] % 3 == 0) {
@@ -170,7 +180,7 @@ public class Prob5 {
 		}
 		System.out.println("");
 
-		// 3の倍数以外の出力
+		// 3の倍数以外の検索
 		System.out.print("3の倍数以外 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] % 3 != 0) {
@@ -184,9 +194,14 @@ public class Prob5 {
 	 * prob5-6
 	 */
 	private void prob5_6(){
+		// 配列の宣言
 		int[] data = new int[10];
+
+		// 最小値
 		int min = 10;
+		// 最大値
 		int max = 0;
+		// 合計値
 		double sum = 0;
 
 		for (int i = 0; i < data.length; i++){
@@ -213,8 +228,10 @@ public class Prob5 {
 	 * prob5-7
 	 */
 	private void prob5_7(){
+		// 配列の宣言
 		int[] data = new int[5];
-		double sum = 0;
+		// 合計値
+		double sum = 0; // 計算の都合上、整数型よりも、小数型の方が良いと思う
 
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
@@ -225,6 +242,7 @@ public class Prob5 {
 		}
 		System.out.println("");
 
+		// 合計と平均の出力
 		System.out.println("合計値 : " + sum);
 		double ave = sum / data.length;
 		System.out.println("平均値 : " + ave);
@@ -252,10 +270,13 @@ public class Prob5 {
 	 * prob5-8
 	 */
 	private void prob5_8(){
+		// 配列の宣言
 		int[] data = new int[5];
-		// 個数
+		// 正の数の個数
 		int plus = 0;
+		// 負の数の個数
 		int minus = 0;
+		// ゼロの個数
 		int zero = 0;
 
 		for (int i = 0; i < data.length; i++){
@@ -271,6 +292,7 @@ public class Prob5 {
 		}
 		System.out.println("");
 
+		// 計算結果の出力
 		System.out.println("0より大きい数 : " + plus + "個");
 		System.out.println("0より小さい数 : " + minus + "個");
 		System.out.println("0の個数 : " + zero + "個");
@@ -281,15 +303,17 @@ public class Prob5 {
 	 * prob5-9
 	 */
 	private void prob5_9(){
+		// 配列の宣言
 		int[] data = new int[10];
 
+		// 配列に代入
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 			System.out.print(data[i] + " ");
 		}
 		System.out.println("");
 
-		// 50以上の出力
+		// 50以上の数の検索
 		System.out.print("50以上の数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] >= 50) {
@@ -298,7 +322,7 @@ public class Prob5 {
 		}
 		System.out.println("");
 
-		// 50未満の出力
+		// 50未満の数の検索
 		System.out.print("50未満の数 : ");
 		for (int i = 0; i < data.length; i++){
 			if (data[i] < 50) {
@@ -312,15 +336,17 @@ public class Prob5 {
 	 * prob5-10
 	 */
 	private void prob5_10(){
+		// 配列の宣言
 		int[] data = new int[7];
 
+		// 配列に代入
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 			System.out.print(data[i] + " ");
 		}
 		System.out.println("");
 
-		// *を出力
+		// {i} 行目に * を {j} 個出力
 		for (int i = 0; i < data.length; i++){
 			for (int j = 0; j < data[i]; j++){
 				System.out.print("*");
@@ -334,8 +360,10 @@ public class Prob5 {
 	 * prob5-11
 	 */
 	private void prob5_11(){
+		// 配列の宣言
 		int[] data = new int[5];
 
+		// 配列に代入
 		for (int i = 0; i < data.length; i++){
 			data[i] = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 			System.out.print(data[i] + " ");
@@ -374,8 +402,10 @@ public class Prob5 {
 	 * prob5-12
 	 */
 	private void prob5_12(){
+		// 配列の宣言
 		int[][] data = new int[3][3];
 
+		// 配列の[ i ][ j ]に数字を代入
 		for (int i = 0; i < data.length; i++){
 			for (int j = 0; j < data[i].length; j++){
 				data[i][j] = (int)(Math.random()*10); // 0から9までの乱数を発生させる
@@ -389,10 +419,14 @@ public class Prob5 {
 	 * prob5-13
 	 */
 	private void prob5_13(){
+		// 配列の宣言
 		int[][] data = new int[3][3];
+		// 最大値
 		int max = 0;
+		// 最小値
 		int min = 9;
 
+		// 配列の[ i ][ j ]に数字を代入
 		for (int i = 0; i < data.length; i++){
 			for (int j = 0; j < data[i].length; j++){
 				data[i][j] = (int)(Math.random()*10); // 0から9までの乱数を発生させる
@@ -408,6 +442,8 @@ public class Prob5 {
 			}
 			System.out.println("");
 		}
+
+		// 結果の表示
 		System.out.println("最大値 : " + max);
 		System.out.println("最小値 : " + min);
 	}

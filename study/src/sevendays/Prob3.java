@@ -91,6 +91,7 @@ public class Prob3 {
 	private void prob3_1(){
 		int random = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random >= 5) {
 			System.out.println("5以上です");
 		}
@@ -102,6 +103,7 @@ public class Prob3 {
 	private void prob3_2(){
 		int random = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random != 1) {
 			System.out.println("1ではありません");
 		}
@@ -113,6 +115,7 @@ public class Prob3 {
 	private void prob3_3(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random < 50) {
 			System.out.println("50未満です");
 		}
@@ -124,6 +127,7 @@ public class Prob3 {
 	private void prob3_4(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random <= 10 || random <= 90) {
 			System.out.println("10以下か90以上の値です");
 		}
@@ -135,6 +139,7 @@ public class Prob3 {
 	private void prob3_5(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (20 <= random && random < 80) {
 			System.out.println("20以上80未満です");
 		}
@@ -146,6 +151,7 @@ public class Prob3 {
 	private void prob3_6(){
 		int num = (int)(Math.random()*6)+1;    //  1から6までの乱数を発生させる
         System.out.println("数値 : " + num);
+
         if (num >= 3) {
         	System.out.println("3以上です。");
 
@@ -158,6 +164,7 @@ public class Prob3 {
 	private void prob3_7(){
 		int random = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random >= 5) {
 			System.out.println("5以上です");
 		} else {
@@ -171,6 +178,7 @@ public class Prob3 {
 	private void prob3_8(){
 		int random = (int)(Math.random()*10) + 1; // 1から10までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random != 1) {
 			System.out.println("1ではありません");
 		} else {
@@ -184,6 +192,7 @@ public class Prob3 {
 	private void prob3_9(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random < 50) {
 			System.out.println("50未満です");
 		} else {
@@ -197,6 +206,7 @@ public class Prob3 {
 	private void prob3_10(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random <= 10 || random <= 90) {
 			System.out.println("10以下か90以上の値です");
 		} else {
@@ -210,6 +220,7 @@ public class Prob3 {
 	private void prob3_11(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (20 <= random && random < 80) {
 			System.out.println("20以上80未満です");
 		} else {
@@ -223,6 +234,7 @@ public class Prob3 {
 	private void prob3_12(){
 		int random = (int)(Math.random()*21) - 10; // -10から10までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random < 0) {
 			System.out.println("負の値です");
 		} else if (0 < random) {
@@ -238,6 +250,7 @@ public class Prob3 {
 	private void prob3_13(){
 		int random = (int)(Math.random()*3) + 1; // 1から3までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		switch (random) {
 		case 1:
 			System.out.println("グー");
@@ -275,6 +288,7 @@ public class Prob3 {
 	private void prob3_15(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("点数 : " + random);
+
 		if (80 <= random) {
 			System.out.println("優");
 		} else if (70 <= random) {
@@ -292,6 +306,7 @@ public class Prob3 {
 	private void prob3_16(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random % 6 == 0) {
 			System.out.println("2と3の公倍数です");
 		} else if (random % 2 == 0) {
@@ -307,6 +322,7 @@ public class Prob3 {
 	private void prob3_17(){
 		int random = (int)(Math.random()*100) + 1; // 1から100までの乱数を発生させる
 		System.out.println("乱数 : " + random);
+
 		if (random % 2 == 0) {
 			if (random <= 50){
 				System.out.println("50以下の偶数です");
@@ -324,6 +340,7 @@ public class Prob3 {
 	private void prob3_18(){
 		int random = (int)(Math.random()*46) - 10; // -10から35までの乱数を発生させる
 		System.out.println("摂氏  " + random + " 度");
+
 		if (30 <= random) {
 			System.out.println("真夏日です");
 		} else if (25 <= random) {
