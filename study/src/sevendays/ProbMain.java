@@ -21,6 +21,8 @@ public class ProbMain {
 		Prob6.main(args);
 		Prob7.main(args);
 		Prob8.main(args);
+		ProbEx5.main(args);
+		ProbEx6.main(args);
 	}
 
 }
