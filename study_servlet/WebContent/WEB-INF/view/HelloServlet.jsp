@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Index</title>
+<title>HelloServlet</title>
 </head>
 <body>
 	<a href="https://qiita.com/Kazunori-Kimura/items/a15a011485ac92074d6f" target="_blank">参考サイト</a><br>

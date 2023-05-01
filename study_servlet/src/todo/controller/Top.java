@@ -1,6 +1,8 @@
 package todo.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -28,6 +30,8 @@ public class Top extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		request.setAttribute("classes", new ArrayList<String>(Arrays.asList(Const.CLASS_LIST)));
 
 	    String view = "/WEB-INF/view/Top.jsp";
 	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
