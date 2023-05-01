@@ -7,6 +7,7 @@
 <title>Index</title>
 </head>
 <body>
+	<a href="https://qiita.com/Kazunori-Kimura/items/a15a011485ac92074d6f" target="_blank">参考サイト</a><br>
     <% String userName = (String) request.getAttribute("userName"); %>
     こんにちは、<%= userName %> さん！
 

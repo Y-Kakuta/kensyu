@@ -12,14 +12,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/HelloServlet")
-public class HelloServlet extends HttpServlet {
+@WebServlet("/Top")
+public class Top extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloServlet() {
+    public Top() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,13 +28,8 @@ public class HelloServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String name = (String) request.getAttribute("userName");
 
-	    if (name == null || "".equals(name)) {
-	        request.setAttribute("userName", "Guest");
-	    }
-
-	    String view = "/WEB-INF/view/HelloServlet.jsp";
+	    String view = "/WEB-INF/view/Top.jsp";
 	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 	    dispatcher.forward(request, response);
 	}
@@ -43,14 +38,7 @@ public class HelloServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 文字コードの指定
-	    request.setCharacterEncoding("utf-8");
-	    // formから値を取得
-	    String name = request.getParameter("name");
-
-	    request.setAttribute("userName", name);
-
-	    doGet(request, response);
+		doGet(request, response);
 	}
 
 }
