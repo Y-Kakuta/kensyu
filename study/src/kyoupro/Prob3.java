@@ -16,11 +16,11 @@ public class Prob3 {
 		// マスの最大値
 		int N = Integer.parseInt(s);
 
-		// 最短マップ
+		// 最短マップ<マス, 最短歩数>
 		HashMap<Integer, Integer> minMap = new HashMap<>();
 		minMap.put(1, 1);
 
-		// 処理待ちリスト
+		// 処理待ちリスト(マスを保存)
 		ArrayList<Integer> procList = new ArrayList<>();
 		procList.add(1);
 
@@ -65,8 +65,10 @@ public class Prob3 {
 
 	}
 
-	// 2進数のビット数の計算
+	// 2進数のビットの計算
 	private static int calcMove(int number){
+
+		// 2進数にしたときに、1になっているビットの数
 		int count = 0;
 
 		// 2進数のビットの計算
