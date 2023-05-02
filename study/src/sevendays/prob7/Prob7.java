@@ -1,4 +1,4 @@
-package sevendays.prob7;
+package src.sevendays.prob7;
 
 /**
  * 基本問題7

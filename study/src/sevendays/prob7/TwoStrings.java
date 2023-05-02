@@ -1,4 +1,4 @@
-package sevendays.prob7;
+package src.sevendays.prob7;
 
 /**
  * prob7-2 文字列を扱うクラス

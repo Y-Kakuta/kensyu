@@ -31,8 +31,10 @@ public class Top extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		// パラメータの設定
 		request.setAttribute("classes", new ArrayList<String>(Arrays.asList(Const.CLASS_LIST)));
 
+		// javaの結果をjspに渡す
 	    String view = "/WEB-INF/view/Top.jsp";
 	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 	    dispatcher.forward(request, response);

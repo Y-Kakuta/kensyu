@@ -1,4 +1,4 @@
-package sevendays.prob6;
+package src.sevendays.prob6;
 
 /**
  * prob6-2 計算を保管するクラス

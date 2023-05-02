@@ -1,4 +1,4 @@
-package sevendays;
+package src.sevendays;
 
 /**
  * 基本問題3

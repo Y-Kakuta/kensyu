@@ -1,4 +1,4 @@
-package kyoupro;
+package src.kyoupro;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,7 +1,7 @@
-package sevendays;
+package src.sevendays;
 
-import sevendays.prob6.Prob6;
-import sevendays.prob7.Prob7;
+import src.sevendays.prob6.Prob6;
+import src.sevendays.prob7.Prob7;
 
 /**
  * 全部一気に実行

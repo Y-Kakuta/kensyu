@@ -28,12 +28,16 @@ public class HelloServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		// パラメータの確認
 		String name = (String) request.getAttribute("userName");
 
 	    if (name == null || "".equals(name)) {
+	    	// パラメータの設定
 	        request.setAttribute("userName", "Guest");
 	    }
 
+	    // javaの結果をjspに渡す
 	    String view = "/WEB-INF/view/HelloServlet.jsp";
 	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 	    dispatcher.forward(request, response);

@@ -1,4 +1,4 @@
-package sevendays.prob7;
+package src.sevendays.prob7;
 
 /**
  * prob7-1 データ管理をするクラス

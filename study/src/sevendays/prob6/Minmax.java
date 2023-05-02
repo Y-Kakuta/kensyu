@@ -1,4 +1,4 @@
-package sevendays.prob6;
+package src.sevendays.prob6;
 
 /**
  * prob6-1 最大と最小を求めるクラス

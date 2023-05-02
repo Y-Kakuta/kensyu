@@ -1,4 +1,4 @@
-package sevendays;
+package src.sevendays;
 
 import java.io.BufferedReader;
 import java.io.IOException;
