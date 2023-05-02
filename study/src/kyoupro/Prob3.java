@@ -63,6 +63,10 @@ public class Prob3 {
 			System.out.println(-1);
 		}
 
+		for (int i = 0; i <= N; i++ ){
+			System.out.println(i + " " + minMap.get(i));
+		}
+
 	}
 
 	// 2進数のビットの計算
