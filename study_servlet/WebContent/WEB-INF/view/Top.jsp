@@ -13,5 +13,6 @@
 			<li><a href=<%= c %>><%= c %></a></li>
 		<% } %>
 	</ul>
+	<img src="./static/img/a.png">
 </body>
 </html>
